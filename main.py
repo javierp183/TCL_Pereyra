@@ -30,7 +30,7 @@
 
 # Database
 from pony.orm import db_session, select
-from pony.orm import commit
+from pony.orm import commit,select
 
 # Framework
 from bottle import jinja2_view as view
@@ -88,33 +88,44 @@ def complete():
 # --------------------------------------------------------------------------- #
 
 @route('/doctor')
+@db_session
 @view('doctor.tpl', template_lookup=['views'])
 def main_doctor_index():
     """ Doctor Main Index """
-    result = dict(title=settings['application']['tittle'])
 
+    #Get Complete list of Medics
+    medics = select(m for m in Medic)[:]
+    result = {'data': [m.to_dict() for m in medics]}
 
-    return result
+    return dict(context=result)
 
 
 @route('/patient')
+@db_session
 @view('patient.tpl', template_lookup=['views'])
 def main_doctor_index():
     """ Patient Main Index """
-    result = dict(title=settings['application']['tittle'])
+    
+    #Get Complete list of Patients
+    patients = select(p for p in Patient)[:]
+    result = {'data': [p.to_dict() for p in patients]}
 
 
-    return result
+    return dict(context=result)
 
 
 @route('/user')
+@db_session
 @view('user.tpl', template_lookup=['views'])
 def main_doctor_index():
     """ User Main Index """
-    result = dict(title=settings['application']['tittle'])
+    
+    #Get Complete list of Patients
+    users = select(p for p in User)[:]
+    result = {'data': [p.to_dict() for p in users]}
 
 
-    return result
+    return dict(context=result)
 
 
 run(**settings['framework'])

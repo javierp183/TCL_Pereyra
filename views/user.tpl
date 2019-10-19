@@ -1,21 +1,11 @@
 {% include "head.tpl" %}
 
-<h3>Admin</h3>
+<h3>Users/h3>
 
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>lastname</th>
-    <th>Doctor ID</th>
-  </tr>
-  <tr>
-    <td>Ramon</td>
-    <td>Perez esquivel</td>
-    <td>123456</td>
-  </tr>
-  
-</table>
+{{ context }}
+
+
 
 
 {% include "foot.tpl" %}

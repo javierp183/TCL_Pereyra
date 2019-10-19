@@ -100,11 +100,7 @@ def user_add():
 # # Sample Database
 # # --------------------------------------------------------------------------- #
 
-# #Calling functions
-# productos()
-# random_voucher()
-
-#speciality_add()
-#medic_add()
-#patient_add()
+speciality_add()
+medic_add()
+patient_add()
 user_add()
