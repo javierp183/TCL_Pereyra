@@ -87,11 +87,11 @@ def complete():
 # Application Main Routes
 # --------------------------------------------------------------------------- #
 
-@route('/doctor')
+@route('/medic')
 @db_session
 @view('doctor.tpl', template_lookup=['views'])
 def main_doctor_index():
-    """ Doctor Main Index """
+    """ Medic Main Index """
 
     #Get Complete list of Medics
     medics = select(m for m in Medic)[:]
