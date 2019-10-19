@@ -107,7 +107,7 @@ def main_doctor_index():
     return result
 
 
-@route('/admin')
+@route('/user')
 @view('admin.tpl', template_lookup=['views'])
 def main_doctor_index():
     """ Admin Main Index """

@@ -96,7 +96,7 @@ class Agenda(db.Entity):
     cliente = Optional(Patient)
 
 class User(db.Entity):
-    """ Administrator Table """
+    """ Users Table """
     id = PrimaryKey(int, auto=True)
     name = Optional(str)
     lastname = Optional(str)
