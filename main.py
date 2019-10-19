@@ -108,9 +108,9 @@ def main_doctor_index():
 
 
 @route('/user')
-@view('admin.tpl', template_lookup=['views'])
+@view('user.tpl', template_lookup=['views'])
 def main_doctor_index():
-    """ Admin Main Index """
+    """ User Main Index """
     result = dict(title=settings['application']['tittle'])
 
 
