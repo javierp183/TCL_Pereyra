@@ -63,22 +63,22 @@ def server_static(filepath):
 # Function - Helpers - Render output
 # --------------------------------------------------------------------------- #
 
-@route('/errorvoucher')
-@view('errorvoucher.tpl', template_lookup=['views'])
+@route('/validate')
+@view('validate.tpl', template_lookup=['views'])
 def error():
     pass
 
-@route('/thanks')
+@route('/saveuser')
 @view('thanks.tpl', template_lookup=['views'])
 def thanks():
     pass
 
-@route('/already')
+@route('/savemedic')
 @view('already_registered.tpl', template_lookup=['views'])
 def thanks():
     pass
 
-@route('/complete')
+@route('/savepatient')
 @view('complete_fields.tpl', template_lookup=['views'])
 def complete():
     pass
@@ -110,7 +110,6 @@ def main_doctor_index():
     patients = select(p for p in Patient)[:]
     result = {'data': [p.to_dict() for p in patients]}
 
-
     return dict(context=result)
 
 
@@ -123,7 +122,6 @@ def main_doctor_index():
     #Get Complete list of Patients
     users = select(p for p in User)[:]
     result = {'data': [p.to_dict() for p in users]}
-
 
     return dict(context=result)
 

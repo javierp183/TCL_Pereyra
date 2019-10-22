@@ -52,7 +52,7 @@ if config['database']['debug']:
     set_sql_debug(True)
 
 # --------------------------------------------------------------------------- #
-# Tables Schemas ( objects )
+# Tables Schemas / objects /
 # --------------------------------------------------------------------------- #
 
 class Speciality(db.Entity):

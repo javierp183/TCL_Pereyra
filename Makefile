@@ -28,10 +28,10 @@ deps:
 	@pip install -r requirements.txt
 
 start:
-	@python main.py
+	@python3 main.py
 
 populate:
-	@python populate.py
+	@python3 populate.py
 
 clean:
 	@rm -rf sqlite.db

@@ -35,6 +35,7 @@ FROM alpine:latest
 # ---------------------------------------------------------------------------- #
 RUN apk add python3
 RUN apk add sqlite
+RUN apk add make
 RUN python3 -m pip install bottle
 RUN python3 -m pip install pony
 RUN python3 -m pip install PyYAML
