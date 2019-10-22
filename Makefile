@@ -36,5 +36,8 @@ populate:
 clean:
 	@rm -rf sqlite.db
 
+build:
+	@docker build -t "tcl_pereyra" .
+
 lint:
 	@find . -name "*.py" | xargs pylint
