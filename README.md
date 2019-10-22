@@ -104,19 +104,24 @@ $ python populate
 ```
 
 # Docker Image
-``` git clone project
+``` 
+git clone project
 ```
 
-``` cd project
+``` 
+cd project
 ```
 
-``` docker build -t "tcl_pereyra" .
+``` 
+docker build -t "tcl_pereyra" .
 ```
 
-``` docker run -p 8080:8080 -it tcl_pereyra
+``` 
+docker run -p 8080:8080 -it tcl_pereyra
 ```
 
-``` Go to firefox browser -> url:  http://localhost:8080/route's
+``` 
+Go to firefox browser -> url:  http://localhost:8080/route's
 ```
 
 # Default routes ->
