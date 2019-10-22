@@ -43,7 +43,6 @@ from database import Speciality
 # Load configurations from YML file.
 config = Loader().settings
 
-#print(config['loader']['medics']['speciality'])
 
 # --------------------------------------------------------------------------- #
 # Populate Database
@@ -84,17 +83,7 @@ def user_add():
             userid=config['loader']['user']['data']['userid'][i],
             password=config['loader']['user']['data']['password'][i],
             rol=config['loader']['user']['data']['rol'][i])
-        commit()
-
-
-
-#     Producto(
-#         titulo="Space Ship",
-#         descripcion="A Thing to go to another place",
-#         urlimagen="img/nave.jpg")
-
-#     # Commit
-#     commit()
+        commit()   
 
 # # --------------------------------------------------------------------------- #
 # # Sample Database
