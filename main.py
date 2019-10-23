@@ -87,9 +87,40 @@ def complete():
 # Application Main Routes
 # --------------------------------------------------------------------------- #
 
+@route('/')
+@db_session
+@view('index.tpl', template_lookup=['views'])
+def main_doctor_index():
+    """ Main Index """
+    pass
+
+@route('/useradd')
+@db_session
+@view('useradd.tpl', template_lookup=['views'])
+def main_doctor_index():
+    """ Main Index """
+    pass
+
+
+@route('/agenda')
+@db_session
+@view('index.tpl', template_lookup=['views'])
+def main_doctor_index():
+    """ Main Index """
+    pass
+
+
+@route('/useradd')
+@db_session
+@view('useradd.tpl', template_lookup=['views'])
+def main_doctor_index():
+    """ Main Index """
+    pass
+
+
 @route('/medic')
 @db_session
-@view('doctor.tpl', template_lookup=['views'])
+@view('medic.tpl', template_lookup=['views'])
 def main_doctor_index():
     """ Medic Main Index """
 
