@@ -24,7 +24,10 @@ https://www.sqlitetutorial.net/download-install-sqlite/
 Please, get Docker installed on you laptop/desktop or create an account in some cloud service ( Google Cloud / Amazon or IBM Cloud ) to use it.
 
 For Mac:
-https://docs.docker.com/docker-for-mac/install/
+https://docs.docker.com/docker-for-mac/install
+
+Youtuve Video:
+https://www.youtube.com/watch?v=O4Yro0VN5Ds
 
 For Windows:
 https://hub.docker.com/editions/community/docker-ce-desktop-windows
@@ -37,7 +40,7 @@ For Ubuntu:
 
 ####################################################################
 
-# For linux:
+# For linux or Mac:
 
 # Clone Repository
 
