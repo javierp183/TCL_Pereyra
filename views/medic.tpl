@@ -1,10 +1,26 @@
 {% include "head.tpl" %}
 
+<header>
+<input type="checkbox" id="btn-menu">
+<label for="btn-menu">Menu</label>
+
+<nav class="menu">
+  <ul>
+    <li><a>Medics</a></li>
+    <li><a>Assigned</a></li>
+    <li><a>Agenda</a></li>
+    <li><a>Patients</a></li>
+    <li><a>Speciality</a></li>
+
+  </ul>
+
+</nav>
+</header>
+
+
 <h4> Display Medical Doctor List</h4>
 
 {%for i in context.data%}
-
-
 
 <table border="1">
         <tr>
