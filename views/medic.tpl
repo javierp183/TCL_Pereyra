@@ -2,27 +2,25 @@
 
 <header>
 <input type="checkbox" id="btn-menu">
-<label for="btn-menu">Menu</label>
+<label for="btn-menu"><img src="static/img/button_menu.jpg" height="30" width="30" alt=""></label>
 
 <nav class="menu">
   <ul>
-    <li><a>Medics</a></li>
-    <li><a>Assigned</a></li>
-    <li><a>Agenda</a></li>
+    <li><a>Help</a></li>
+    <li><a>Search</a></li>
+    <li><a>Schedule</a></li>
     <li><a>Patients</a></li>
-    <li><a>Speciality</a></li>
-
   </ul>
 
 </nav>
 </header>
 
+<p class="center">Medical Information - Personal</p>
 
-<h4> Display Medical Doctor List</h4>
 
 {%for i in context.data%}
 
-<table border="1">
+<table id="personal">
         <tr>
           <th>Name</th>
           <th>Lastname</th>

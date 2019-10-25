@@ -1,9 +1,25 @@
 {% include "head.tpl" %}
 
-<h3>Patients Registered</h3>
+<header>
+<input type="checkbox" id="btn-menu">
+<label for="btn-menu"><img src="static/img/button_menu.jpg" height="30" width="30" alt=""></label>
+
+<nav class="menu">
+  <ul>
+    <li><a>Help</a></li>
+    <li><a>Search</a></li>
+    <li><a>Schedule</a></li>
+    <li><a>Patients</a></li>
+  </ul>
+
+</nav>
+</header>
+
+<p class="center">Patients Registered</p>
+
 
 {%for i in context.data%}
-<table border="1">
+<table id="personal">
         <tr>
           <th>Name</th>
           <th>Lastname</th>
